@@ -8,7 +8,6 @@
 
 I build across web, backend, AI and connected devices—with a focus on reliable workflows, clear user experiences and explainable decisions.
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mayank2142.github.io/Portfolio-Website/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mayank-gupta-14b95428b/)
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/Mayank1720/)
 [![Codolio](https://img.shields.io/badge/Codolio-334155?style=for-the-badge)](https://codolio.com/profile/Mayank1720)
@@ -66,24 +65,7 @@ Start here: my most substantial product, backend and AI work. Deployed projects 
 
 ---
 
-### 03 · Darwix AI Chat — resilient multimodal conversations
-
-<a href="https://smart-chat-green.vercel.app/">
-  <img src="https://raw.githubusercontent.com/Mayank2142/SmartChat/main/output/playwright/phase-10/desktop-dark.png" alt="Darwix AI Chat desktop interface in dark mode" width="100%" />
-</a>
-
-**An accessible Gemini chat experience built around the whole message lifecycle—not just the happy path.**
-
-- Multimodal attachments with server-side model calls that keep API keys out of the browser.
-- Cancellation, retry, single-flight requests and stable message identities.
-- Persistent/temporary sessions, interrupted-request recovery and bounded history loading.
-- Automated interaction, accessibility, persistence and failure-recovery tests.
-
-`React` `TypeScript` `Vite` `Gemini API` `Vitest` `Testing Library` `Vercel`
-
-**[▶ Live demo](https://smart-chat-green.vercel.app/)** · [Source code](https://github.com/Mayank2142/SmartChat) · [Implementation notes](https://github.com/Mayank2142/SmartChat/blob/main/IMPLEMENTATION.md)
-
-### 04 · Smart Operator Assistant — machinery operations co-pilot
+### 03 · Smart Operator Assistant — machinery operations co-pilot
 
 Task planning, telemetry, safety alerts, incident handling and cited operator guidance in one prototype. Deterministic safety rules take priority over ML/LLM output; synthetic telemetry is labelled as demonstration data.
 
@@ -91,7 +73,7 @@ Task planning, telemetry, safety alerts, incident handling and cited operator gu
 
 [Source & local demo](https://github.com/Mayank2142/Smart-Operator-Assistant-for-CAT-Machinery) · [Architecture](https://github.com/Mayank2142/Smart-Operator-Assistant-for-CAT-Machinery/blob/main/docs/ARCHITECTURE.md)
 
-### 05 · Dependency Risk Console — explainable dependency security
+### 04 · Dependency Risk Console — explainable dependency security
 
 DepShield AI combines npm audit/OSV evidence, dependency topology, bounded static reachability, contextual risk, remediation simulation, policy gates and SBOM exports. Scores are project heuristics—not proof of exploitability or a security certification.
 
@@ -99,7 +81,7 @@ DepShield AI combines npm audit/OSV evidence, dependency topology, bounded stati
 
 [Source & local demo](https://github.com/Mayank2142/Dependency-Risk-Console) · [Architecture](https://github.com/Mayank2142/Dependency-Risk-Console/blob/main/docs/ARCHITECTURE_V2.md) · [Preserved project provenance](https://github.com/Mayank2142/Dependency-Risk-Console/blob/main/MIGRATION.md)
 
-### 06 · SpreadTheSheets — real-time collaborative spreadsheets
+### 05 · SpreadTheSheets — real-time collaborative spreadsheets
 
 Live multi-user editing, formulas, presence, sharing, version history, in-document chat, charts and CSV export in a collaborative workspace.
 
@@ -117,7 +99,6 @@ Live multi-user editing, formulas, presence, sharing, version history, in-docume
 | **Vivi Alarm** | React productivity dashboard with clocks, weather, alarms and Pomodoro tools | [Live demo](https://vivi-alarm.vercel.app/) · [Repository](https://github.com/Mayank2142/Vivi-Alarm) |
 | **Online Voting System** | Voter/candidate registration, voting confirmation and results with Node.js, Express and SQLite | [Repository](https://github.com/Mayank2142/online-voting-system-project) |
 | **Emergency Vehicle Detection** | Python project exploring emergency-vehicle detection | [Repository](https://github.com/Mayank2142/Emergency-vehicle-detection) |
-| **Portfolio Website** | Personal portfolio and project showcase | [Live site](https://mayank2142.github.io/Portfolio-Website/) · [Repository](https://github.com/Mayank2142/Portfolio-Website) |
 
 **[Browse all public repositories →](https://github.com/Mayank2142?tab=repositories)**
 
@@ -187,18 +168,17 @@ Tools represented in my projects—not a list copied from a template.
   <a href="https://github.com/Mayank2142"><img src="https://streak-stats.demolab.com?user=Mayank2142&theme=tokyonight&hide_border=true" alt="Mayank Gupta's dynamically generated GitHub contribution streak" width="70%" /></a>
 </p>
 
-<sub>Cards are provided by external services and may occasionally be unavailable. Language proportions describe repository code, not proficiency. GitHub's native contribution calendar is available on my profile; no statistics are hard-coded here.</sub>
+<sub>All cards request data for <strong>Mayank2142</strong>; no numbers are hard-coded. Third-party cards can be cached or unavailable and may not include all private activity. Language proportions describe repository code, not proficiency. The letter rank is the card provider's activity metric—not an official GitHub rating or a measure of engineering ability. See GitHub's native contribution calendar on my profile for the first-party activity view.</sub>
 
 ### Quality signals from the projects
 
 [![CineBook CI](https://github.com/Mayank2142/ticket-booking/actions/workflows/ci.yml/badge.svg)](https://github.com/Mayank2142/ticket-booking/actions/workflows/ci.yml)
-[![SmartChat CI](https://github.com/Mayank2142/SmartChat/actions/workflows/ci.yml/badge.svg)](https://github.com/Mayank2142/SmartChat/actions/workflows/ci.yml)
 
 ## 🤝 Let's connect
 
 Interested in building a product, discussing systems or collaborating on applied AI? **[Message me on LinkedIn](https://www.linkedin.com/in/mayank-gupta-14b95428b/).**
 
-[Portfolio](https://mayank2142.github.io/Portfolio-Website/) · [GitHub repositories](https://github.com/Mayank2142?tab=repositories) · [LeetCode](https://leetcode.com/u/Mayank1720/) · [Codolio](https://codolio.com/profile/Mayank1720)
+[GitHub repositories](https://github.com/Mayank2142?tab=repositories) · [LeetCode](https://leetcode.com/u/Mayank1720/) · [Codolio](https://codolio.com/profile/Mayank1720)
 
 ---
 
