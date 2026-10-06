@@ -1,218 +1,209 @@
 <div align="center">
 
-# Mayank Gupta
+# 👋 Hi, I'm Mayank Gupta
 
-### Software Engineer | Full-Stack Developer | Applied AI/ML
+### Software Engineer · Full-Stack Developer · Applied AI/ML
 
-I build full-stack products where good interfaces are backed by reliable APIs, deliberate data models, and tested failure handling. My recent work covers transactional booking, multimodal AI chat, real-time collaboration, and explainable AML investigation.
+**Interfaces people enjoy. Systems they can trust.**
 
-<p>
-  <a href="https://mayank2142.github.io/Portfolio-Website/"><img src="https://img.shields.io/badge/Portfolio-0F766E?style=flat-square" alt="Portfolio" /></a>
-  <a href="https://www.linkedin.com/in/mayank-gupta-14b95428b/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://github.com/Mayank2142"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="https://leetcode.com/u/Mayank1720/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=flat-square&logo=leetcode&logoColor=white" alt="LeetCode" /></a>
-  <a href="https://codolio.com/profile/Mayank1720"><img src="https://img.shields.io/badge/Codolio-334155?style=flat-square" alt="Codolio" /></a>
-</p>
+I build across web, backend, AI and connected devices—with a focus on reliable workflows, clear user experiences and explainable decisions.
 
-[About](#about) · [Projects](#featured-projects) · [Tech Stack](#tech-stack) · [Engineering Interests](#engineering-interests) · [Activity](#activity) · [Contact](#contact)
+[![Portfolio](https://img.shields.io/badge/Portfolio-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mayank2142.github.io/Portfolio-Website/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mayank-gupta-14b95428b/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/Mayank1720/)
+[![Codolio](https://img.shields.io/badge/Codolio-334155?style=for-the-badge)](https://codolio.com/profile/Mayank1720)
+
+[Projects](#-featured-projects) · [More repositories](#-more-projects) · [About](#-about-me) · [Tech stack](#-tech-stack) · [Activity](#-github-activity) · [Connect](#-lets-connect)
 
 </div>
 
----
+## 🚀 Featured projects
 
-## About
+Start here: my most substantial product, backend and AI work. Deployed projects include a live demo; local-only projects link to their setup instructions.
 
-I work across frontend, backend, and applied AI. I am most interested in projects where product behavior depends on engineering correctness: concurrent state changes, authentication and authorization, real-time synchronization, secure model calls, explainable decisions, and recovery from failure.
+### 01 · CineBook — movies, live events & reliable seat booking
 
-I am currently looking for **Software Engineer Intern**, **Full-Stack**, **Backend**, and **Applied AI/ML** opportunities.
+<a href="https://ticket-booking-production-dd12.up.railway.app/">
+  <img src="https://raw.githubusercontent.com/Mayank2142/ticket-booking/main/output/playwright/readme/01-home-dark.jpg" alt="CineBook dark-mode home page with movie discovery and event cards" width="100%" />
+</a>
 
-## What I build
+**A complete booking experience, backed by an ownership-safe seat-allocation workflow.**
 
-> **Full-Stack Applications** — Product-focused React and Next.js applications connected to real APIs, authentication, relational or real-time data, and production deployments.
+- Searchable movie/live-event discovery, city selection, favourites and recommendations.
+- Accessible seat maps, atomic holds, expiry, server-calculated totals and QR tickets.
+- FIFO waitlists with single-use offers, cancellation and live inventory through SSE.
+- Customer, organiser and administrator workflows, reports and audit history.
+- Durable background jobs, retry scheduling and automated API/browser regression tests.
 
-> **Backend Systems** — Transactional workflows, role-based access, validation, API design, scheduled cleanup, database consistency, and integration testing.
+`React` `Vite` `TypeScript` `Node.js` `Prisma` `PostgreSQL` `JWT` `Playwright` `Railway`
 
-> **Applied AI/ML** — Secure LLM integration, hybrid anomaly detection, evidence-linked explanations, model fallbacks, and human review workflows.
+**[▶ Live demo](https://ticket-booking-production-dd12.up.railway.app/)** · [Source code](https://github.com/Mayank2142/ticket-booking) · [Architecture & setup](https://github.com/Mayank2142/ticket-booking#architecture)
 
-> **Real-Time & Connected Systems** — Collaborative Firebase applications and Flutter/ESP32 systems that connect sensors, cloud state, and mobile interfaces.
-
-## Currently building
-
-### [CineBook](https://github.com/Mayank2142/ticket-booking)
-
-A concurrency-safe movie and concert booking system. The technically interesting work is the seat-allocation state machine: atomic holds, expiry, booking, cancellation, and fair waitlist reassignment.
-
-`Next.js` `TypeScript` `Prisma` `SQLite` `JWT` `Tailwind CSS`
-
-[Live demo](https://ticket-booking-production-9e71.up.railway.app/) · [Repository](https://github.com/Mayank2142/ticket-booking) · [System design](https://github.com/Mayank2142/ticket-booking/blob/main/SYSTEM_DESIGN.md)
-
-### [Darwix AI Chat](https://github.com/Mayank2142/SmartChat)
-
-An accessible Gemini chat application with multimodal attachments, secure server-side model calls, persistent and temporary sessions, failure recovery, and automated quality checks.
-
-`React` `TypeScript` `Vite` `Vitest` `Gemini API` `Vercel`
-
-[Live demo](https://smart-chat-green.vercel.app/) · [Repository](https://github.com/Mayank2142/SmartChat) · [CI](https://github.com/Mayank2142/SmartChat/actions)
-
-## Featured projects
-
-### CineBook — concurrency-safe ticket allocation
-
-<p align="center">
-  <a href="https://ticket-booking-production-9e71.up.railway.app/">
-    <img src="https://raw.githubusercontent.com/Mayank2142/ticket-booking/main/output/playwright/events-home.png" width="760" alt="CineBook event discovery interface" />
-  </a>
-</p>
-
-CineBook addresses the consistency problems behind high-demand booking, not only the visual seat picker.
-
-- Conditional database updates and transactions prevent two customers from owning the same seat.
-- Expiring holds and waitlist offers are released both during reads and by a protected scheduled cleanup job.
-- Cancellation triggers FIFO waitlist allocation with single-use offer tokens.
-- JWT role checks separate customer, organiser, and administrator workflows.
-- The repository includes six isolated integration and concurrency scenarios using a disposable SQLite database.
-
-`Next.js 14` `TypeScript` `Prisma` `SQLite` `Nodemailer` `QR tickets` `Railway`
-
-<p>
-  <a href="https://ticket-booking-production-9e71.up.railway.app/"><img src="https://img.shields.io/badge/Live_demo-0F766E?style=flat-square" alt="CineBook live demo" /></a>
-  <a href="https://github.com/Mayank2142/ticket-booking"><img src="https://img.shields.io/badge/Source_code-181717?style=flat-square&logo=github&logoColor=white" alt="CineBook source code" /></a>
-  <a href="https://github.com/Mayank2142/ticket-booking/blob/main/SYSTEM_DESIGN.md"><img src="https://img.shields.io/badge/System_design-334155?style=flat-square" alt="CineBook system design" /></a>
-</p>
+<sub>Sample inventory and demo accounts—not real paid tickets. Email delivery remains pending HTTPS-provider integration; Railway Trial blocks SMTP.</sub>
 
 ---
 
-### Sentinel AML — explainable investigation workflow
+### 02 · Sentinel AML — explainable, agentic investigation
 
-<p align="center">
-  <a href="https://sentinel-aml-gamma.vercel.app/">
-    <img src="https://raw.githubusercontent.com/Mayank2142/AI-Powered-Suspicious-Activity-Detection/main/docs/screenshots/command-center.png" width="760" alt="Sentinel AML investigation console" />
-  </a>
-</p>
+<a href="https://sentinel-aml-gamma.vercel.app/">
+  <img src="https://raw.githubusercontent.com/Mayank2142/Sentinel-AML/main/docs/screenshots/command-center.png" alt="Sentinel AML evidence-based financial investigation command center" width="100%" />
+</a>
 
-Sentinel is a team-built decision-support workspace that turns an analyst's natural-language question into a bounded, auditable investigation.
+**Natural-language questions become bounded analytical plans, evidence and human-review workflows.**
 
-- The planner selects only the tools relevant to the query and records skipped tools with reasons.
-- Rules, statistical detection, Isolation Forest, and optional graph analysis contribute evidence to risk scoring.
-- Explanations are tied to computed signals, feature values, and controlled AML knowledge.
-- Investigations retain dataset, model, policy, execution, evidence, and reviewer provenance.
-- The workflow keeps escalation and final regulatory decisions under human control.
+- Query-aware orchestration selects relevant tools and explains why others were skipped.
+- Rules, statistics, Isolation Forest and graph analysis support explainable risk scoring.
+- Governed datasets, model provenance, investigation traces and reviewer audit history.
+- Human escalation remains explicit: investigative leads are not regulatory decisions.
 
-My documented contribution: **product experience, frontend architecture, visualization, and integration**.
+**Team project · My documented contribution:** product experience, frontend architecture, UI/UX, visualization and integration.
 
 `React` `TypeScript` `FastAPI` `Python` `DuckDB` `scikit-learn` `NetworkX` `Groq`
 
-<p>
-  <a href="https://sentinel-aml-gamma.vercel.app/"><img src="https://img.shields.io/badge/Live_demo-0F766E?style=flat-square" alt="Sentinel AML live demo" /></a>
-  <a href="https://github.com/Mayank2142/AI-Powered-Suspicious-Activity-Detection"><img src="https://img.shields.io/badge/Source_code-181717?style=flat-square&logo=github&logoColor=white" alt="Sentinel AML source code" /></a>
-  <a href="https://mayank2142-sentinel-aml-api.hf.space/docs"><img src="https://img.shields.io/badge/API_docs-334155?style=flat-square" alt="Sentinel AML API documentation" /></a>
-</p>
+**[▶ Live demo](https://sentinel-aml-gamma.vercel.app/)** · [Source code](https://github.com/Mayank2142/Sentinel-AML) · [API docs](https://mayank2142-sentinel-aml-api.hf.space/docs)
+
+**AWS deployment edition:** [Repository](https://github.com/Mayank2142/Anti-Money-Laundering-Detection) · [Live AWS demo](https://sentinel-aml-demo-frontendbucket-aqfdpzq4srwb.s3.ap-south-1.amazonaws.com/index.html#/)
 
 ---
 
-### Darwix AI Chat — resilient multimodal interaction
+### 03 · Darwix AI Chat — resilient multimodal conversations
 
-<p align="center">
-  <a href="https://smart-chat-green.vercel.app/">
-    <img src="https://raw.githubusercontent.com/Mayank2142/SmartChat/main/output/playwright/phase-10/desktop-dark.png" width="760" alt="Darwix AI Chat interface" />
-  </a>
-</p>
+<a href="https://smart-chat-green.vercel.app/">
+  <img src="https://raw.githubusercontent.com/Mayank2142/SmartChat/main/output/playwright/phase-10/desktop-dark.png" alt="Darwix AI Chat desktop interface in dark mode" width="100%" />
+</a>
 
-Darwix focuses on the complete message lifecycle around an AI model, including the states that are easy to overlook.
+**An accessible Gemini chat experience built around the whole message lifecycle—not just the happy path.**
 
-- A same-origin server endpoint keeps the Gemini API key out of browser JavaScript.
-- A single-flight request lock, cancellation, retry, and stable message IDs prevent duplicate or conflicting requests.
-- Saved sessions recover interrupted requests; temporary sessions are never persisted.
-- Progressive history loading bounds mounted messages while preserving scroll position.
-- The documented 45-test suite covers interaction, failure recovery, persistence, attachments, accessibility, and large histories; CI runs lint, tests, and production build.
+- Multimodal attachments with server-side model calls that keep API keys out of the browser.
+- Cancellation, retry, single-flight requests and stable message identities.
+- Persistent/temporary sessions, interrupted-request recovery and bounded history loading.
+- Automated interaction, accessibility, persistence and failure-recovery tests.
 
-`React 19` `TypeScript` `Vite` `Vitest` `Testing Library` `Gemini API` `GitHub Actions`
+`React` `TypeScript` `Vite` `Gemini API` `Vitest` `Testing Library` `Vercel`
 
-<p>
-  <a href="https://smart-chat-green.vercel.app/"><img src="https://img.shields.io/badge/Live_demo-0F766E?style=flat-square" alt="Darwix AI Chat live demo" /></a>
-  <a href="https://github.com/Mayank2142/SmartChat"><img src="https://img.shields.io/badge/Source_code-181717?style=flat-square&logo=github&logoColor=white" alt="Darwix AI Chat source code" /></a>
-  <a href="https://github.com/Mayank2142/SmartChat/blob/main/IMPLEMENTATION.md"><img src="https://img.shields.io/badge/Implementation-334155?style=flat-square" alt="Darwix AI Chat implementation documentation" /></a>
-</p>
+**[▶ Live demo](https://smart-chat-green.vercel.app/)** · [Source code](https://github.com/Mayank2142/SmartChat) · [Implementation notes](https://github.com/Mayank2142/SmartChat/blob/main/IMPLEMENTATION.md)
 
-## More projects
+### 04 · Smart Operator Assistant — machinery operations co-pilot
 
-### [SpreadTheSheets](https://github.com/Mayank2142/SpreadTheSheets)
+Task planning, telemetry, safety alerts, incident handling and cited operator guidance in one prototype. Deterministic safety rules take priority over ML/LLM output; synthetic telemetry is labelled as demonstration data.
 
-Real-time collaborative spreadsheet with Firestore synchronization, formulas, presence, sharing, version history, chat, charts, CSV export, and AI-assisted workflows.  
-`Next.js` `TypeScript` `Firebase` `Firestore` — [Live demo](https://spreadthesheets.vercel.app/)
+`Python` `FastAPI` `PostgreSQL / SQLite` `Document RAG` `Docker`
 
-### [Smart Helmet](https://github.com/Mayank2142/Smart_Helmet)
+[Source & local demo](https://github.com/Mayank2142/Smart-Operator-Assistant-for-CAT-Machinery) · [Architecture](https://github.com/Mayank2142/Smart-Operator-Assistant-for-CAT-Machinery/blob/main/docs/ARCHITECTURE.md)
 
-Connected accident-detection prototype combining ESP32 firmware, MPU6050 sensing, Firebase telemetry, a Flutter monitoring app, and GPS-tagged emergency alerts.  
-`Flutter` `Dart` `ESP32` `Firebase` — [Project documentation](https://github.com/Mayank2142/Smart_Helmet/blob/main/PROJECT_DOCUMENTATION.md)
+### 05 · Dependency Risk Console — explainable dependency security
 
-### [CampusMate](https://github.com/Mayank2142/Campus-Mate)
+DepShield AI combines npm audit/OSV evidence, dependency topology, bounded static reachability, contextual risk, remediation simulation, policy gates and SBOM exports. Scores are project heuristics—not proof of exploitability or a security certification.
 
-Flutter campus-tour application with Supabase authentication, Google Maps, 360° panoramas, 3D room previews, audio tours, and detailed location data.  
-`Flutter` `Dart` `Supabase` `Google Maps` — [Screenshots](https://github.com/Mayank2142/Campus-Mate#-app-screenshots)
+`Next.js` `TypeScript` `SQLite` `OSV` `Gemini` `React Flow`
 
-## Tech stack
+[Source & local demo](https://github.com/Mayank2142/Dependency-Risk-Console) · [Architecture](https://github.com/Mayank2142/Dependency-Risk-Console/blob/main/docs/ARCHITECTURE_V2.md) · [Preserved project provenance](https://github.com/Mayank2142/Dependency-Risk-Console/blob/main/MIGRATION.md)
+
+### 06 · SpreadTheSheets — real-time collaborative spreadsheets
+
+Live multi-user editing, formulas, presence, sharing, version history, in-document chat, charts and CSV export in a collaborative workspace.
+
+`Next.js` `TypeScript` `Firebase` `Firestore`
+
+**[▶ Live demo](https://spreadthesheets.vercel.app/)** · [Source code](https://github.com/Mayank2142/SpreadTheSheets)
+
+## 🧩 More projects
+
+| Project | What it explores | Links |
+|---|---|---|
+| **Smart Helmet** | ESP32/MPU6050 crash detection, Flutter monitoring, Firebase telemetry and GPS-tagged emergency alerts | [Repository](https://github.com/Mayank2142/Smart_Helmet) · [Documentation](https://github.com/Mayank2142/Smart_Helmet/blob/main/PROJECT_DOCUMENTATION.md) |
+| **CampusMate** | Flutter campus tours with Supabase auth, Google Maps, 360° panoramas, audio and 3D previews | [Repository](https://github.com/Mayank2142/Campus-Mate) |
+| **Sentient Calendar** | React/Next.js calendar, range selection, daily notes, sticky memos and local persistence | [Live demo](https://sentient-calendar.vercel.app/) · [Repository](https://github.com/Mayank2142/sentient-calendar) |
+| **Vivi Alarm** | React productivity dashboard with clocks, weather, alarms and Pomodoro tools | [Live demo](https://vivi-alarm.vercel.app/) · [Repository](https://github.com/Mayank2142/Vivi-Alarm) |
+| **Online Voting System** | Voter/candidate registration, voting confirmation and results with Node.js, Express and SQLite | [Repository](https://github.com/Mayank2142/online-voting-system-project) |
+| **Emergency Vehicle Detection** | Python project exploring emergency-vehicle detection | [Repository](https://github.com/Mayank2142/Emergency-vehicle-detection) |
+| **Portfolio Website** | Personal portfolio and project showcase | [Live site](https://mayank2142.github.io/Portfolio-Website/) · [Repository](https://github.com/Mayank2142/Portfolio-Website) |
+
+**[Browse all public repositories →](https://github.com/Mayank2142?tab=repositories)**
+
+<sub>Featured work is curated rather than an exhaustive list of forks, experiments or private repositories. Local-only projects are labelled instead of given invented deployment links.</sub>
+
+## 👨‍💻 About me
+
+I work across frontend, backend and applied AI. I enjoy engineering problems where details matter: concurrent state changes, role-based access, database consistency, secure model integrations and recovery from partial failure.
+
+- **Currently building:** full-stack products, explainable AI workflows and reliable backend systems.
+- **Interested in:** API architecture, distributed state, system design, accessible interfaces and connected applications.
+- **Open to:** Software Engineer Intern, Full-Stack, Backend and Applied AI/ML opportunities.
+- **Engineering mindset:** **Build → Test → Understand → Improve.**
+
+A polished interface matters. So do the behaviour under invalid input, unavailable services and simultaneous users—and the documentation that makes those tradeoffs clear.
+
+## 💻 Tech stack
+
+Tools represented in my projects—not a list copied from a template.
 
 **Languages**
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 
-**Frontend and mobile**
+**Frontend & mobile**
 
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
-**Backend and data**
+**Backend & data**
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=111)
-![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=firebase&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black)
+![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=black)
 
-**AI/ML and delivery**
+**AI, testing & deployment**
 
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=black)
 
-## Engineering interests
+## 📊 GitHub activity
 
-- Backend and API architecture
-- Transactional workflows and database consistency
-- System design and failure handling
-- Applied AI, LLM integration, and explainability
-- Machine-learning systems with human review
-- Real-time synchronization and connected applications
-- Testing, CI, and maintainable developer workflows
+<p align="center">
+  <a href="https://github.com/Mayank2142?tab=repositories"><img src="https://github-readme-stats.vercel.app/api?username=Mayank2142&show_icons=true&theme=tokyonight&hide_border=true" alt="Mayank Gupta's dynamically generated public GitHub statistics" width="49%" /></a>
+  <a href="https://github.com/Mayank2142?tab=repositories"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mayank2142&layout=compact&theme=tokyonight&hide_border=true" alt="Languages across Mayank Gupta's public repositories" width="49%" /></a>
+</p>
 
-## Engineering mindset
+<p align="center">
+  <a href="https://github.com/Mayank2142"><img src="https://streak-stats.demolab.com?user=Mayank2142&theme=tokyonight&hide_border=true" alt="Mayank Gupta's dynamically generated GitHub contribution streak" width="70%" /></a>
+</p>
 
-**Build → Test → Understand → Improve**
+<sub>Cards are provided by external services and may occasionally be unavailable. Language proportions describe repository code, not proficiency. GitHub's native contribution calendar is available on my profile; no statistics are hard-coded here.</sub>
 
-I care about correctness before cleverness, visible failure states instead of silent errors, and documentation that explains decisions and tradeoffs. A polished interface matters, but so do the behavior under concurrency, invalid input, unavailable services, and partial failure.
+### Quality signals from the projects
 
-## Activity
-
-GitHub's native contribution calendar appears below this profile README. For current code-quality signals, these repository workflows are more useful than a streak counter:
-
+[![CineBook CI](https://github.com/Mayank2142/ticket-booking/actions/workflows/ci.yml/badge.svg)](https://github.com/Mayank2142/ticket-booking/actions/workflows/ci.yml)
 [![SmartChat CI](https://github.com/Mayank2142/SmartChat/actions/workflows/ci.yml/badge.svg)](https://github.com/Mayank2142/SmartChat/actions/workflows/ci.yml)
-[![Sentinel AML CI](https://github.com/Mayank2142/AI-Powered-Suspicious-Activity-Detection/actions/workflows/ci.yml/badge.svg)](https://github.com/Mayank2142/AI-Powered-Suspicious-Activity-Detection/actions/workflows/ci.yml)
 
-## Contact
+## 🤝 Let's connect
 
-The best way to reach me is through [LinkedIn](https://www.linkedin.com/in/mayank-gupta-14b95428b/). You can also find my work and problem-solving profiles here:
+Interested in building a product, discussing systems or collaborating on applied AI? **[Message me on LinkedIn](https://www.linkedin.com/in/mayank-gupta-14b95428b/).**
 
-- [Portfolio](https://mayank2142.github.io/Portfolio-Website/)
-- [GitHub](https://github.com/Mayank2142)
-- [LeetCode](https://leetcode.com/u/Mayank1720/)
-- [Codolio](https://codolio.com/profile/Mayank1720)
+[Portfolio](https://mayank2142.github.io/Portfolio-Website/) · [GitHub repositories](https://github.com/Mayank2142?tab=repositories) · [LeetCode](https://leetcode.com/u/Mayank1720/) · [Codolio](https://codolio.com/profile/Mayank1720)
 
+---
+
+<div align="center">
+
+**Thanks for visiting — explore a demo, read the code, and let's build something useful.**
+
+</div>
